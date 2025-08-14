@@ -22,7 +22,7 @@ const About = ({ bio, skills, imageUrl }) => {
       id="about"
       className="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700 transition-all duration-300"
     >
-      <h2 className="text-4xl font-bold mb-8 text-center text-blue-400">
+      <h2 className="text-4xl font-bold mb-8 text-center text-orange-400">
         About Me
       </h2>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-12">

@@ -13,7 +13,7 @@ const Footer = ({ name, email, linkedin, github }) => {
         <div className="flex justify-center gap-6 mb-8">
           <a
             href={`mailto:${email}`}
-            className="hover:text-blue-400 transition-colors duration-200"
+            className="hover:text-orange-400 transition-colors duration-200"
             aria-label="Email"
           >
             <Mail size={32} />
@@ -22,7 +22,7 @@ const Footer = ({ name, email, linkedin, github }) => {
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition-colors duration-200"
+            className="hover:text-orange-400 transition-colors duration-200"
             aria-label="LinkedIn"
           >
             <Linkedin size={32} />
@@ -31,7 +31,7 @@ const Footer = ({ name, email, linkedin, github }) => {
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition-colors duration-200"
+            className="hover:text-orange-400 transition-colors duration-200"
             aria-label="GitHub"
           >
             <Github size={32} />
