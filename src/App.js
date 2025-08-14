@@ -12,7 +12,7 @@ const portfolioData = {
   email: "Thin6464vn@gmail.com",
   linkedin: "https://www.linkedin.com/in/tople1109",
   github: "https://github.com/Tople1109",
-  profilePicture: "https://placehold.co/250x250/e67e22/ffffff?text=Your+Photo",
+  profilePicture: "/vander.jpg",
   bio: "I’m a highly motivated Software Engineer and Computer Science student at The University of Texas at Dallas (GPA: 3.96/4.0). I build scalable, full-stack applications that combine solid engineering with intuitive, user-focused design. With experience in both front-end and back-end development, I enjoy solving complex problems and using modern frameworks to create efficient, impactful solutions.",
   skills: {
     languages: ["JavaScript", "TypeScript", "Java", "Python", "C++"],
@@ -56,41 +56,57 @@ const portfolioData = {
   ],
   projects: [
     {
-      name: "Study Buddy",
+      name: "CapNav (AI Study Companion)",
       date: "June 2025 - Present",
       description:
-        "A social learning platform where students can collaborate on study materials, share notes, and set collective study goals, fostering a sense of community and accountability.",
+        "An AI-powered learning assistant that helps students improve their study habits by generating personalized quizzes, summarizing notes, and recommending study schedules based on past performance.",
       techStack: [
         "React.js",
-        "Python",
-        "Flask",
-        "PostgreSQL",
-        "Figma",
+        "Spring Boot",
+        "AI/ML",
         "WebSockets",
+        "MySQL/PostgreSQL"
       ],
       features: [
-        "Developed a dynamic frontend with real-time chat and live collaboration features using React.js.",
-        "Built the back-end using Python with Flask, following the MVC pattern to structure application logic.",
-        "Integrated PostgreSQL for database management and enabled seamless user interactions through WebSockets for live updates.",
+        "AI Model: Trained on user study patterns to suggest study plans.",
+        "NLP (Natural Language Processing): Summarizes notes and generates quizzes.",
+        "Speech Recognition: Converts spoken lectures into text summaries.",
+        "Reinforcement Learning: Learns from user responses to refine quiz difficulty."
       ],
-      liveUrl: "https://www.youtube.com/watch?v=your-video-id", // Placeholder YouTube URL
-      githubUrl: "https://github.com/Tople1109/studybuddy",
-      imageUrl:
-        "https://placehold.co/400x250/e67e22/ffffff?text=Study+Buddy+Project",
-      // Detailed Project Page data (Placeholder)
-      overview: ["This is a placeholder overview for the Study Buddy project."],
+      liveUrl: "https://www.youtube.com/watch?v=your-video-id",
+      githubUrl: "https://github.com/Tople1109/capnav",
+      imageUrl: "https://placehold.co/400x250/e67e22/ffffff?text=CapNav+Project",
+      overview: [
+        "CapNav is an AI-powered learning assistant that helps students improve their study habits by generating personalized quizzes, summarizing notes, and recommending study schedules based on past performance. This project showcases a modern tech stack and a comprehensive AI/ML pipeline to create a powerful educational tool."
+      ],
       techStackDetailed: {
-        frontend: ["React.js", "Figma", "HTML/CSS"],
-        backend: ["Python (Flask)", "PostgreSQL", "WebSockets"],
+        frontend: [
+          "React.js (UI)",
+          "Tailwind CSS / Material-UI (Styling)",
+          "Redux/Context API (State management)",
+          "WebSockets (for real-time AI chat)",
+          "Chart.js / Recharts (Visualizing study progress)"
+        ],
+        backend: [
+          "Spring Boot (REST APIs)",
+          "Hibernate (JPA) + MySQL/PostgreSQL (Database)",
+          "Spring Security (User authentication)",
+          "OpenAI API/ TensorFlow / Scikit-learn (for ML models)",
+          "JWT for authentication",
+          "Spring Boot WebSockets (for real-time interactions)"
+        ],
       },
-      runningInstructions: [{ title: "Coming soon...", steps: [] }],
-      futureGoals: [
-        {
-          title: "Coming soon...",
-          description: "Details about future goals will be added here.",
-        },
+      runningInstructions: [
+        { title: "Coming soon...", steps: [] }
       ],
-      conclusion: "Conclusion for Study Buddy.",
+      futureGoals: [
+        { title: "Real-time AI Chat", description: "Implement WebSockets for real-time AI chat interactions." },
+        { title: "Improved NLP", description: "Improve NLP-based summarization & quiz generation." },
+        { title: "Study Plan Recommender", description: "Implement an AI-powered study plan recommender based on past performance." },
+        { title: "Containerization", description: "Containerize the application with Docker for easier deployment." }
+      ],
+      conclusion:
+        "The future goals for CapNav aim to enhance user engagement and create a more collaborative and dynamic experience. With features like real-time chat and improved AI models, CapNav is evolving into not just a productivity tool, but a social and gamified experience. These enhancements will help users stay motivated, focused, and connected as they work toward their personal or team goals. We are excited to roll out these features in future updates, and we believe they will significantly improve how users interact with the app, keeping productivity fun and rewarding."
     },
     {
       name: "FinSightAI",
@@ -222,7 +238,6 @@ const portfolioData = {
       liveUrl: "https://www.youtube.com/watch?v=XGRQzs2TiR0",
       githubUrl: "https://github.com/Tople1109/goalgrid",
       imageUrl: "/goalgrid.png",
-      // Detailed Project Page data (from your text)
       overview: [
         "Inspired by the classic game of Bingo, we developed GoalGrid, a task-oriented game designed to combine productivity with entertainment. It’s a productivity tool designed to keep users motivated, foster a sense of accomplishment, and help them effectively organize and prioritize their daily responsibilities.",
         "Users can create and customize their tasks, which are later randomly placed into a grid format. Players are challenged to complete tasks strategically to achieve Bingo, which occurs when they complete all tasks in a horizontal or vertical line. For those who seek a greater challenge, the ultimate goal is to achieve Blackout, which requires completing every task in the grid.",
